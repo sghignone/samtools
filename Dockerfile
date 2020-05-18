@@ -13,6 +13,6 @@ RUN	conda config --add channels conda-forge && \
 	conda config --add channels default
 	
 	#INSTALL SOFTWARE
-RUN	conda install -c bioconda bcftools samtools && conda clean -a
+RUN	conda install -c bioconda bcftools=1.10 samtools=1.10 && conda clean -a
 
 WORKDIR	/scratch
